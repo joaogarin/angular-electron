@@ -3,10 +3,11 @@
 /*
  * Helper: root(), and rootDir() are defined at the bottom
  */
-var webpack = require('webpack');
-var helpers = require('./helpers');
+const webpack = require('webpack');
+const helpers = require('./helpers');
+const path = require('path');
 
-var webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
+const webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 
 var METADATA = {
     title: 'Angular2 Minimal Starter',
@@ -54,16 +55,45 @@ var config = {
             // Support for .ts files.
             {
                 test: /\.ts$/,
-                loader: 'awesome-typescript-loader',
+                loaders: ['awesome-typescript-loader', 'angular2-template-loader'],
                 exclude: [/\.(spec|e2e)\.ts$/]
             },
 
             // Support for *.json files.
-            { test: /\.json$/, loader: 'json-loader' },
+            {
+                test: /\.json$/,
+                loader: 'json-loader'
+            },
 
-            // support for .html as raw text
-            { test: /\.html$/, loader: 'raw-loader', exclude: [helpers.root('app/index.html')] }
+            // Support for .scss files.
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
+            },
+
+            // support for .html antd .css as raw text
+            {
+                test: /\.html$/,
+                loader: 'raw-loader',
+                exclude: [helpers.root('app/index.html')]
+            },
+
+            // support for fonts
+            {
+                test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+                loader: 'file-loader?name=dist/[name]-[hash].[ext]'
+            },
+
+            // support for svg icons
+            {
+                test: /\.svg/,
+                loader: 'svg-url-loader'
+            }
         ]
+    },
+
+    sassLoader: {
+        includePaths: [path.resolve(__dirname, "./src/app")]
     },
 
     plugins: [
