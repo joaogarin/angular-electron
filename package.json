@@ -79,7 +79,7 @@
     "source-map-loader": "^0.1.5"
   },
   "engines": {
-    "node": ">= 4.2.1 <= 5",
+    "node": ">= 6",
     "npm": ">= 3"
   }
 }
