@@ -39,15 +39,15 @@
     "@ngrx/core": "^1.1.0",
     "@ngrx/store": "^2.1.2",
     "core-js": "^2.4.1",
+    "electron": "^1.4.3",
     "rxjs": "5.0.0-beta.12",
     "zone.js": "^0.6.23",
-    "electron-prebuilt": "^0.35.4",
     "webpack-target-electron-renderer": "^0.4.0"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^0.15.10",
     "codelyzer": "0.0.28",
-    "electron-packager": "^5.2.1",
+    "electron-packager": "^8.1.0",
     "es6-promise-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "imports-loader": "^0.6.5",
