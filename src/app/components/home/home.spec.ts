@@ -9,7 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Setup redux with ngrx
 import { Store, StoreModule } from '@ngrx/store';
-import { authStore, authInitialState } from './../store/auth.store';
+import { authStore, authInitialState } from '../../store/auth.store';
 
 describe('App component', () => {
     beforeEach(() => TestBed.configureTestingModule({

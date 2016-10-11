@@ -8,16 +8,12 @@ import { FormControl, FormGroup } from '@angular/forms';
  * Import the ngrx configured store
  */
 import { Store } from '@ngrx/store';
-import { AppState } from './../store/appState.store';
+import { AppState } from '../../store/appState.store';
 
 @Component({
   selector: 'ae-home',
-  template: `
-    <div [formGroup]="messageForm">
-       <h1>{{messageForm.controls['messageText'].value}}</h1>
-       <input type="text" formControlName="messageText"/>
-    </div>
-    `
+  template: require('./home.component.html').toString(),
+  styles: [require('./home.component.scss').toString()],
 })
 export class HomeComponent implements OnInit {
   name: string;

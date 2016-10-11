@@ -8,21 +8,17 @@ import { Router } from '@angular/router';
  * Import the ngrx configured store
  */
 import { Store } from '@ngrx/store';
-import { AppState } from './../store/appState.store';
+import { AppState } from '../../store/appState.store';
 
 /**
  * Import the authentication service to be injected into our component
  */
-import { Authentication } from './../services/authentication';
+import { Authentication } from '../../services/authentication';
 
 @Component({
     selector: 'ae-login',
-    template: `
-    <div>
-        Authenticate
-        <button *ngIf='!authenticated' (click)='authenticate()'>Authenticate with Github</button>
-    </div>
-    `
+    template: require('./login.component.html').toString(),
+    styles: [require('./login.component.scss').toString()],
 })
 export class LoginComponent {
     unsubscribe: any;

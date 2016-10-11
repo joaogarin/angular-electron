@@ -16,8 +16,8 @@ import { authStore, authInitialState } from './store/auth.store';
 /**
  * Import our child components
  */
-import { LoginComponent } from './components/login.component';
-import { HomeComponent } from './components/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 import { AppComponent } from './components/app.component';
 
 import { routes } from './app.routes';
