@@ -26,7 +26,7 @@
   "homepage": "",
   "dependencies": {
     "@angular/common": "2.2.3",
-    "@angular/compiler": "2.2.3",
+    "@angular/compiler": "2.2.4",
     "@angular/core": "2.2.3",
     "@angular/forms": "^2.1.2",
     "@angular/http": "2.2.3",
