@@ -52,7 +52,7 @@ export class Authentication {
     // Build the OAuth consent page URL
     let githubUrl = 'https://github.com/login/oauth/authorize?';
     let authUrl = githubUrl + 'client_id=' + options.github.client_id + '&scope=' + options.github.scopes;
-    this.authWindow.loadUrl(authUrl);
+    this.authWindow.loadURL(authUrl);
     this.authWindow.show();
 
     // Handle the response from GitHub
