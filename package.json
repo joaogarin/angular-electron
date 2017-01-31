@@ -83,7 +83,7 @@
     "sass-loader": "^4.0.2",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
-    "svg-url-loader": "^1.1.0",
+    "svg-url-loader": "^2.0.0",
     "ts-helpers": "^1.1.1",
     "tsconfig-lint": "^0.12.0",
     "tslint": "^4.0.2",
