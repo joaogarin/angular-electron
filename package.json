@@ -80,7 +80,7 @@
     "reflect-metadata": "0.1.9",
     "remap-istanbul": "^0.8.0",
     "rimraf": "^2.5.2",
-    "sass-loader": "^4.0.2",
+    "sass-loader": "^5.0.0",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
     "svg-url-loader": "^2.0.0",
