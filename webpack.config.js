@@ -8,7 +8,6 @@ const helpers = require('./helpers');
 const path = require('path');
 
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 
 /*
@@ -147,5 +146,5 @@ var config = {
 /**
  * Target Electron
  */
-config.target = webpackTargetElectronRenderer(config);
+config.target = 'electron-renderer';
 module.exports = config;
