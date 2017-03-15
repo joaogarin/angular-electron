@@ -33,7 +33,10 @@ export class Authentication {
   //Inject the store to make sure state changes go through the store
   constructor(public store: Store<AppState>, http: Http) {
     //authenticate and call the store to update the token
-    this.authWindow = new BrowserWindow({ width: 800, height: 600, show: false });
+    const webPreferences = {
+      nodeIntegration: false
+    }
+    this.authWindow = new BrowserWindow({ width: 800, height: 600, show: false, webPreferences });
     this.http = http;
   }
 
