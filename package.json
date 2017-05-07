@@ -2,7 +2,7 @@
   "name": "angular2-electron",
   "version": "0.0.0",
   "description": "Angular 2 with Electron and Webpack",
-  "main": "",
+  "main": "main.js",
   "scripts": {
     "watch": "npm run watch:dev",
     "watch:dev": "webpack --watch --progress --profile",
@@ -10,7 +10,7 @@
     "build:dev": "webpack --progress --profile",
     "package": "node package.js",
     "package-all": "npm run package -- --all",
-    "electron": "electron src/app",
+    "electron": "electron .",
     "webpack-test": "webpack --config webpack.test.js --progress --profile",
     "test": "karma start"
   },

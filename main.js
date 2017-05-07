@@ -19,7 +19,7 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({ width: 1200, height: 900 });
 
   // Tell Electron where to load the entry point from
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('file://' + __dirname + '/src/app/index.html');
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
