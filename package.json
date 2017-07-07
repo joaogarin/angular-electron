@@ -94,7 +94,7 @@
     "url-loader": "^0.5.7",
     "webpack": "2.3.3",
     "webpack-dev-middleware": "^1.10.0",
-    "webpack-dev-server": "2.5.0"
+    "webpack-dev-server": "2.5.1"
   },
   "engines": {
     "node": ">= 4.2.1 <= 6",
