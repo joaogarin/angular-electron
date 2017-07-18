@@ -37,7 +37,7 @@
     "@angular/platform-server": "^4.1.0",
     "@angular/router": "^4.1.0",
     "@ngrx/core": "^1.2.0",
-    "@ngrx/store": "^2.2.1",
+    "@ngrx/store": "^4.0.0",
     "copy-webpack-plugin": "^4.0.1",
     "core-js": "^2.4.1",
     "electron": "^1.4.3",
