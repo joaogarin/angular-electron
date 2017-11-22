@@ -36,7 +36,7 @@
     "@angular/platform-browser": "^4.3.6",
     "@angular/platform-browser-dynamic": "^4.3.6",
     "@angular/platform-server": "^4.3.6",
-    "@angular/router": "^4.3.6",
+    "@angular/router": "^5.0.3",
     "@ngrx/core": "^1.2.0",
     "@ngrx/store": "^4.0.0",
     "copy-webpack-plugin": "^4.0.1",
