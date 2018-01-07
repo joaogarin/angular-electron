@@ -1,5 +1,9 @@
 # Angular 2 electron starterkit featuring webpack
 
+## DEPRECATED
+
+This repo makes no longer much sense as I would recommend using [Electron forge template for Angular](https://github.com/electron-userland/electron-forge-templates) instead. for that reason I am no longer maintaining this repository.
+
 A working demo of [electron] with [angular] using [Webpack], [ngrx] and [material2]
 
 This is a starter of angular (2 and above) and electron. Its a demo of oauth with github using angular and electron. It uses [ngrx] to manage state. You should create a config file as following :
